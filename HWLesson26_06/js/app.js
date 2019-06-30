@@ -12,18 +12,18 @@ function getSignAndType(num) {
         console.log("Not a number.");
     } else {
         if (num < 0) {
-            signNum = "negative"
+            signNum = "negative";
         } else if (num > 0) {
-            signNum = "positive"
+            signNum = "positive";
         } else if (num == 0) {
-            signNum = "zero"
+            signNum = "zero";
         }
 
         if (intNum == true) {
-            typeNum = "integer"
-        } else{
-            typeNum = "float"
+            typeNum = "integer";
+        } else {
+            typeNum = "float";
         }
     }
-    console.log("Number "+ num +" is " + typeNum + " and " + signNum + ".")
+    console.log("Number " + num + " is " + typeNum + " and " + signNum + ".")
 }
