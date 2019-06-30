@@ -3,4 +3,4 @@ Repository for JavaScript home works.
 
 Repository structure:
 
-/HWLesson<i>(number)</i><i>(lesson date, format: dd_mm)</i>/<i>files</i>.
+/HW_<i>(number)</i>_Lesson<i>(lesson date, format: dd_mm)</i>/<i>files</i>.
