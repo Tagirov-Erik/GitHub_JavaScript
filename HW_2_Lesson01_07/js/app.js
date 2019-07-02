@@ -1,15 +1,14 @@
 /*Task 1*/
 console.log("Task 1 -------------------------------------------------------------")
-
 var arr = [];
 arr = [")", "Lol", "emanresu", "olleH"];
 console.log("Initial array: " + arr);
-
-var res = "";
-res = doTaskOne(arr).toString();
-console.log("Result string: " + res);
+var result = "";
+result = doTaskOne(arr);
+console.log("Result string: " + result);
 
 function doTaskOne(arr) {
+    let res = "";
     arr.splice(1, 1);
     arr.reverse();
 
@@ -17,13 +16,12 @@ function doTaskOne(arr) {
         arr[i] = arr[i].split('').reverse().join('');
     }
 
-    arr = arr.join(' ');
-    return arr;
+    res = arr.join(' ');
+    return res;
 }
 
 /*Task 2*/
 console.log("Task 2 -------------------------------------------------------------")
-
 var table = [];
 table = [
     { name: "Tetiana", mark: 4.8, diploma: true },
@@ -36,7 +34,6 @@ table = [
 ]
 console.log("Initial table: ");
 console.log(table);
-
 table = table.sort(compareStudentByTaskLogic).slice(0, 5);
 console.log("Five best after sort: ")
 console.log(table);
@@ -62,11 +59,9 @@ function compareStudentByTaskLogic(student1, student2) {
 
 /*Task 3*/
 console.log("Task 3 -------------------------------------------------------------")
-
 var arr1 = [];
 arr1 = ["el-1", "el-2", "el-3", "el-8", "el-5"];
 console.log("Initial array: " + arr1);
-
 var str = "";
 str = doTaskThree(arr1);
 console.log("Result string: " + str);
