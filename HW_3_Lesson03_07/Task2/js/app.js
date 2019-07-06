@@ -10,16 +10,28 @@ function checkConfirm() {
     var userEmail = document.getElementById('userEmail').value;
     var userInfo = {};
 
-    if (firstName.length < 5 || lastName.length < 5 || userEmail.length < 5) {
-        document.getElementById('firstName').value = '';
-        document.getElementById('lastName').value = '';
-        document.getElementById('userEmail').value = '';
-    } else {
-        alert("Succes");
+    if (firstName.length >= 5 && lastName.length >= 5 && userEmail.length >= 5) {
+        alert("Succes. Object created.");
         userInfo.firstName = firstName;
         userInfo.lastName = lastName;
         userInfo.userEmail = userEmail;
         console.log(userInfo);
+        return;
     }
+
+    if (firstName.length < 5) {
+        alert("First name is too short");
+        document.getElementById('firstName').value = '';
+    }
+    if (lastName.length < 5) {
+        alert("Last name is too short");
+        document.getElementById('lastName').value = '';
+    }
+    if (userEmail.length < 5) {
+        alert("Email is too short");
+        document.getElementById('userEmail').value = '';
+    }
+
+
 }
 
