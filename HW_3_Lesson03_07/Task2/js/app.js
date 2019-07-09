@@ -11,10 +11,10 @@ function checkConfirm() {
     var userInfo = {};
 
     if (firstName.length >= 5 && lastName.length >= 5 && userEmail.length >= 5) {
-        alert("Succes. Object created.");
         userInfo.firstName = firstName;
         userInfo.lastName = lastName;
         userInfo.userEmail = userEmail;
+        alert("Succes. Object created.");
         console.log(userInfo);
         return;
     }
@@ -31,7 +31,5 @@ function checkConfirm() {
         alert("Email is too short");
         document.getElementById('userEmail').value = '';
     }
-
-
 }
 

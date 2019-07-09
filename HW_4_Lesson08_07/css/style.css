@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: skyblue;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    color: rgb(172, 9, 221);
+}
+
+span {
+    display: none;
+    margin-left: 10px;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.error {
+    color: red;
+    display: block;
+}
+
+.form {
+    padding: 20px;
+    height: 200px;
+    width: 165px;
+    margin: auto;
+}
+
+input {
+    margin: 3px;
+    margin-bottom: 6px;
+    padding: 3px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+button {
+    margin-left: 52px;
+    margin-top: 5px;
+    background: rgba(0, 0, 216, 0.712);
+    border: 1px solid rgba(2, 2, 158, 0.829);
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+
